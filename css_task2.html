@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .myDiv {
+            border: 5px;
+            padding: 10px 10px 10px 0px;
+
+        }
+
+        .myDiv ul {
+            margin: 10px 10px 10px 10px;
+            list-style-type: none;
+            padding: 0;
+            width: 200px;
+            background-color: #89CFF0;
+        }
+
+        .myDiv li a {
+            display: block;
+            color: #002D62;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the link color on hover */
+        .myDiv li a:hover {
+            background-color: #FFA500;
+            color: white;
+        }
+
+        .horizontal ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .horizontal li {
+            float: left;
+        }
+
+        .horizontal li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the link color to #111 (black) on hover */
+        .horizontal li a:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Vertical Navigation Bar</h2>
+    <div class="myDiv" style="border: 1px solid black; margin-right: 990px;">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#java">Java</a></li>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#bootstrap">Bootstrap</a></li>
+        </ul>
+    </div>
+    <h2>Horizontal Navigation Bar</h2>
+    <div style="border: 1px solid black; padding: 10px 10px 10px 10px;">
+        <div class="horizontal" >
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#java">Java</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#bootstrap">Bootstrap</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

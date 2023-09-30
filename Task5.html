@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            border: 2px solid black;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            text-align: left;
+        }
+        .checkbox-label {
+            display: inline-block;
+            margin-right: 10px;
+            padding-right: 710px;
+        }
+
+        td.input-field {
+            border: 1px solid black;
+            padding: 0;
+        }
+
+        td.input-field input {
+            border: none;
+            width: 90%;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: blue;">Registration form </h1>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <th>First Name:</th>
+                <td class="input-field"><input type="text" name="firstname" placeholder=""></td>
+            </tr>
+            <tr>
+                <th>Last Name:</th>
+                <td class="input-field"><input type="text" name="lastname" placeholder=""></td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td class="input-field"><input type="email" name="email" placeholder=""></td>
+            </tr>
+            <tr>
+                <th>Password:</th>
+                <td class="input-field"><input type="password" name="password" placeholder=""></td>
+            </tr>
+            <tr>
+                <th>Re-enter Password:</th>
+                <td class="input-field"><input type="password" name="repassword" placeholder=""></td>
+            </tr>
+            <tr>
+                <th>Gender:</th>
+                <td class="checkbox-label" style="padding-right: 950px; border-color: white;">
+                    <input type="radio" name="gender" value="Male"> Male <br>
+                    <input type="radio" name="gender" value="Female"> Female
+                </td>
+            </tr>
+            <tr>
+                <th>Age:</th>
+                <td class="input-field"><input type="number" name="age" placeholder=""></td>
+            </tr>
+            <tr>
+                <th>Phone Number:</th>
+                <td class="input-field"><input type="tel" name="phone" placeholder=""></td>
+            </tr>
+            <tr>
+                <th>Address:</th>
+                <td class="input-field" colspan="3"><textarea name="address" rows="4" cols="150" placeholder=""></textarea></td>
+            </tr>
+            <tr>
+                <th>State:</th>
+                <td class="input-field"><input type="text" name="state" placeholder=""></td>
+            </tr>
+            <tr>
+                <th>Country:</th>
+                <td class="input-field">
+                    <select name="country">
+                        <option value="" disabled selected hidden>Choose your country: </option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="UK">UK</option>
+                        <!-- Add more options here -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Languages Known:</th>
+                <td class="checkbox-label" style="border-color: white;">
+                    <input type="checkbox" name="English" placeholder="">English
+                    <input type="checkbox" name="Kannada" placeholder="">Kannada
+                    <input type="checkbox" name="Hindi" placeholder="">Hindi
+                    <input type="checkbox" name="Telugu" placeholder="">Telugu
+                </td>
+            </tr>
+            <tr>
+                <td class="input-field" colspan="2" style="border: 1px solid black; display: float;">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="declaration"> Hereby I declare all the given details are true
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td class="input-field" colspan="2" style="padding-left: 1000px;">
+                    Log in to <a href="https://www.ethnus.com/">Ethnus website</a>
+                </td>
+            </tr>
+            
+        </table>
+        
+        <div style="text-align: center;">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+</html>
